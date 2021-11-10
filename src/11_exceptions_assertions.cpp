@@ -47,7 +47,7 @@ int main()
 	}
 	
 	//test bad alloc (try to alloc too much)
-	const unsigned int SIXTEEN_GIG = 12000000000;	//4bytes*4000000000
+	const long SIXTEEN_GIG = 12000000000000;	//4bytes*4000000000
 	try
 	{
 		int *y= new int[SIXTEEN_GIG];
@@ -58,7 +58,7 @@ int main()
 		cout<<"memory alloc error"<<endl;
 	}
 	catch(...){
-		cout<<"Generric exception occurred"<<endl;
+		cout<<"Generic exception occurred"<<endl;
 	}
 
 	return 0;
